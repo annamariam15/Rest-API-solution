@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:51532",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\..\\annamariasolution.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

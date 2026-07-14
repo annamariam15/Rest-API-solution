@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="annamariasolution.client/annamariasolution.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="AnnaMariaSolution.Server/AnnaMariaSolution.Server.csproj" />
+  <Project Path="Solution_dbEntities/Solution_dbEntities.csproj" />
+</Solution>

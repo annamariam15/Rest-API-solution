@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\solution_dbentities\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|solutionrelative:solution_dbentities\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\solution_dbentities\\project_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|solutionrelative:solution_dbentities\\project_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\solution_dbentities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|solutionrelative:solution_dbentities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\solution_dbentities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|solutionrelative:solution_dbentities\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\solution_dbentities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4023C796-BC62-46DF-8886-7BA68A685745}|Solution_dbEntities\\Solution_dbEntities.csproj|solutionrelative:solution_dbentities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Project_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\Project_Employee.cs",
+              "RelativeDocumentMoniker": "Solution_dbEntities\\Project_Employee.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\Project_Employee.cs",
+              "RelativeToolTip": "Solution_dbEntities\\Project_Employee.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T16:59:05.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\Role.cs",
+              "RelativeDocumentMoniker": "Solution_dbEntities\\Role.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\Role.cs",
+              "RelativeToolTip": "Solution_dbEntities\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T16:58:23.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\User.cs",
+              "RelativeDocumentMoniker": "Solution_dbEntities\\User.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\User.cs",
+              "RelativeToolTip": "Solution_dbEntities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T16:56:49.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\Task.cs",
+              "RelativeDocumentMoniker": "Solution_dbEntities\\Task.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\Task.cs",
+              "RelativeToolTip": "Solution_dbEntities\\Task.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwBgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T16:56:29.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\Project.cs",
+              "RelativeDocumentMoniker": "Solution_dbEntities\\Project.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\Solution_dbEntities\\Project.cs",
+              "RelativeToolTip": "Solution_dbEntities\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-14T16:47:40.254Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
