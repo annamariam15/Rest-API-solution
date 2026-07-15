@@ -1,7 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\models\\employee_task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\models\\employee_task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\models\\project_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\models\\project_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\annamariasolution.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\annamariasolution.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AnnaMariaSolution.Server\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +54,140 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T16:03:33.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee_Task.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\Employee_Task.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Models\\Employee_Task.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\Employee_Task.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Models\\Employee_Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T15:41:46.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Project_Employee.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\Project_Employee.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Models\\Project_Employee.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\Project_Employee.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Models\\Project_Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T15:40:32.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Models\\Role.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\Role.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T15:42:17.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\User.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\User.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T15:40:56.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Models\\Project.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Models\\Project.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T15:39:45.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Program.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Program.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T15:45:44.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\appsettings.json",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-15T16:31:44.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-15T16:32:30.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AnnaMariaSolution.Server.csproj",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-07-15T15:44:47.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-15T15:42:43.143Z"
             }
           ]
         }
