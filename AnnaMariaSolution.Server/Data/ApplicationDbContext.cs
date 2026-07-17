@@ -17,7 +17,6 @@ namespace AnnaMariaSolution.Server.Data
         {
             base.OnModelCreating(builder); //identity tables
 
-
             builder.Entity<Project_Employee>()
                 .HasKey(pe => new {pe.Project_ID, pe.User_ID}); //composite pk
 
