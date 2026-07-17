@@ -2,8 +2,8 @@
 namespace AnnaMariaSolution.Server.Models;
 public class Project
     {
-    public int Project_ID { get; set; }
-        
+    [Key]
+    public int Id { get; set; }
     [Required]
     [MaxLength(100)]
     public string Name { get; set; }
@@ -15,7 +15,11 @@ public class Project
 
     public DateTime Deadline { get; set; }
 
+    public bool IsComplete { get; set; }
+
     public ICollection<Project_Employee> ProjectEmployees { get; set; }
 
     public ICollection<Employee_Task> Tasks { get; set; }
+
+    public Project(){ IsComplete = false; }
 }

@@ -12,6 +12,7 @@ namespace AnnaMariaSolution.Server.Data
         public DbSet<Project> Projects { get; set; } //add project table
         public DbSet<Employee_Task> Tasks { get; set; } //add employee_task table
         public DbSet<Project_Employee> ProjectEmployees { get; set; } //add project_employee table
+        //public object Project { get; internal set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -29,6 +30,8 @@ namespace AnnaMariaSolution.Server.Data
                 .HasOne(pe => pe.Employee)
                 .WithMany(u => u.ProjectEmployees) //1:M
                 .HasForeignKey(pe => pe.User_ID);
+
         }
+
     }
 }
