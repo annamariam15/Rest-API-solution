@@ -34,8 +34,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "project",
-        "Type": "AnnaMariaSolution.Server.Models.Project",
+        "Name": "dto",
+        "Type": "AnnaMariaSolution.Server.DTOs.CreateProjectDto",
         "IsRequired": true
       }
     ],
@@ -72,7 +72,7 @@
       },
       {
         "Name": "project",
-        "Type": "AnnaMariaSolution.Server.Models.Project",
+        "Type": "Project",
         "IsRequired": true
       }
     ],
