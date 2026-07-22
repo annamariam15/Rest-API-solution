@@ -4,9 +4,8 @@ namespace AnnaMariaSolution.Server.DTOs;
 
 public class UpdateTaskDto
 {
-    public int Creator { get; set; }
-
-    public int Assigned { get; set; }
+    public string Creator { get; set; } = string.Empty;
+    public string Assigned { get; set; } = string.Empty;
 
     public string Status { get; set; } = "Pending";
 

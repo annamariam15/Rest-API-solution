@@ -10,6 +10,7 @@ C:\Users\annam\source\repos\AnnaMariaSolution\AnnaMariaSolution.Server\bin\Debug
 C:\Users\annam\source\repos\AnnaMariaSolution\AnnaMariaSolution.Server\bin\Debug\net10.0\Azure.Core.dll
 C:\Users\annam\source\repos\AnnaMariaSolution\AnnaMariaSolution.Server\bin\Debug\net10.0\Azure.Identity.dll
 C:\Users\annam\source\repos\AnnaMariaSolution\AnnaMariaSolution.Server\bin\Debug\net10.0\Humanizer.dll
+C:\Users\annam\source\repos\AnnaMariaSolution\AnnaMariaSolution.Server\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\annam\source\repos\AnnaMariaSolution\AnnaMariaSolution.Server\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\annam\source\repos\AnnaMariaSolution\AnnaMariaSolution.Server\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\annam\source\repos\AnnaMariaSolution\AnnaMariaSolution.Server\bin\Debug\net10.0\Microsoft.AspNetCore.SpaProxy.dll
