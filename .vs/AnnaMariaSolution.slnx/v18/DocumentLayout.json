@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\dtos\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\dtos\\updatetaskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\appsettings.json",
-              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\appsettings.json",
-              "RelativeToolTip": "AnnaMariaSolution.Server\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-22T16:54:55.434Z",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Program.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Program.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Program.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAwwG4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-23T14:40:02.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateTaskDTO.cs",
-              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\DTOs\\UpdateTaskDTO.cs",
-              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\DTOs\\UpdateTaskDTO.cs",
-              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\DTOs\\UpdateTaskDTO.cs",
-              "RelativeToolTip": "AnnaMariaSolution.Server\\DTOs\\UpdateTaskDTO.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TokenServices.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Services\\TokenServices.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Services\\TokenServices.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Services\\TokenServices.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Services\\TokenServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-21T15:59:49.711Z",
+              "WhenOpened": "2026-07-23T14:25:54.312Z",
               "EditorCaption": ""
             }
           ]

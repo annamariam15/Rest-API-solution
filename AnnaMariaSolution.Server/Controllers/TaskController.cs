@@ -1,6 +1,7 @@
 ﻿using AnnaMariaSolution.Server.Data;
 using AnnaMariaSolution.Server.DTOs;
 using AnnaMariaSolution.Server.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace AnnaMariaSolution.Server.Controllers;
 
 [ApiController]
+[Authorize]
 [Route("api/[controller]")]
 public class EmployeeTaskController : ControllerBase
 {
@@ -18,17 +20,14 @@ public class EmployeeTaskController : ControllerBase
         _context = context;
     }
 
-
-    // GET: api/EmployeeTask
-    [HttpGet]
+    [HttpGet] //get all
     public async Task<IActionResult> GetAll()
     {
         return Ok(await _context.Tasks.ToListAsync());
     }
 
 
-    // GET: api/EmployeeTask/5
-    [HttpGet("{id}")]
+    [HttpGet("{id}")] //get by id
     public async Task<IActionResult> Get(int id)
     {
         var task = await _context.Tasks.FindAsync(id);
@@ -40,8 +39,8 @@ public class EmployeeTaskController : ControllerBase
     }
 
 
-    // POST: api/EmployeeTask
-    [HttpPost]
+    [Authorize(Roles = "Employee")]
+    [HttpPost] //create new task
     public async Task<IActionResult> Create(CreateTaskDto dto)
     {
         var task = new Employee_Task
@@ -70,8 +69,8 @@ public class EmployeeTaskController : ControllerBase
     }
 
 
-    // PUT: api/EmployeeTask/5
-    [HttpPut("{id}")]
+    [Authorize(Roles = "Employee")]
+    [HttpPut("{id}")] //edit existing task
     public async Task<IActionResult> Update(int id, UpdateTaskDto dto)
     {
         var task = await _context.Tasks.FindAsync(id);
@@ -94,8 +93,8 @@ public class EmployeeTaskController : ControllerBase
     }
 
 
-    // DELETE: api/EmployeeTask/5
-    [HttpDelete("{id}")]
+    [Authorize(Roles = "Employee")]
+    [HttpDelete("{id}")] //delete task
     public async Task<IActionResult> Delete(int id)
     {
         var task = await _context.Tasks.FindAsync(id);

@@ -1,14 +1,17 @@
 ﻿//using AnnaMariaSolution.Server.Services.Interfaces;
 //using Azure.Core;
+//using AnnaMariaSolution.Server.Models;
+
 using AnnaMariaSolution.Server.Data;
 using AnnaMariaSolution.Server.DTOs;
-//using AnnaMariaSolution.Server.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace AnnaMariaSolution.Server.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/[controller]")]
     public class ProjectController : ControllerBase //ControllerBase functionality
     {
@@ -20,10 +23,12 @@ namespace AnnaMariaSolution.Server.Controllers
         } //constructor
 
 
+        [Authorize]
         [HttpGet] //retrieves all projects
         public async Task<IActionResult> GetAll() => Ok(await _context.Projects.ToListAsync());
 
-        [HttpGet("{id}")]// get by id
+        [Authorize]
+        [HttpGet("{id}")]// retrieves by id
         public async Task<IActionResult> Get(int id)
         {
             var project = await _context.Projects.FindAsync(id);
@@ -31,15 +36,8 @@ namespace AnnaMariaSolution.Server.Controllers
         }
 
 
-        /*[HttpPost]// create project
-        public async Task<IActionResult> CreateProjectAsync(Project project)
-        {
-            _context.Projects.Add(project); //marks entity for insertion
-            await _context.SaveChangesAsync(); // tldr sql execution
-            return CreatedAtAction(nameof(Get), new { id = project.Id }, project);
-        }*/
-
-        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        [HttpPost] //create project
         public async Task<IActionResult> CreateProjectAsync(CreateProjectDto dto)
         {
             var project = new Project
@@ -58,17 +56,8 @@ namespace AnnaMariaSolution.Server.Controllers
 
 
 
-
-        /*[HttpPut("{id}")] //update project by id
-        public async Task<IActionResult> Update(int id, Project project)
-        {
-            if (id != project.Id) return BadRequest();
-            _context.Entry(project).State = EntityState.Modified; // marks as modifie
-            await _context.SaveChangesAsync(); // tldr sql execution
-            return NoContent();
-        }*/
-
-        [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
+        [HttpPut("{id}")] //update project by id
         public async Task<IActionResult> Update(int id, UpdateProjectDto dto)
         {
             var project = await _context.Projects.FindAsync(id);
@@ -87,7 +76,7 @@ namespace AnnaMariaSolution.Server.Controllers
         }
 
 
-
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")] //delete by id
         public async Task<IActionResult> Delete(int id)
         {

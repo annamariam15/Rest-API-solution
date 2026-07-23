@@ -18,16 +18,14 @@ public class ProjectEmployeeController : ControllerBase
     }
 
 
-    // GET: api/ProjectEmployee
-    [HttpGet]
+    [HttpGet] //get all
     public async Task<IActionResult> GetAll()
     {
         return Ok(await _context.ProjectEmployees.ToListAsync());
     }
 
 
-    // GET: api/ProjectEmployee/project/1
-    [HttpGet("project/{projectId}")]
+    [HttpGet("project/{projectId}")] //get by projectid
     public async Task<IActionResult> GetByProject(int projectId)
     {
         var employees = await _context.ProjectEmployees
@@ -38,8 +36,7 @@ public class ProjectEmployeeController : ControllerBase
     }
 
 
-    // POST: api/ProjectEmployee
-    [HttpPost]
+    [HttpPost] //create new project employee
     public async Task<IActionResult> AddEmployee(AddEmployeeToProjectDto dto)
     {
         var projectExists = await _context.Projects
@@ -73,8 +70,7 @@ public class ProjectEmployeeController : ControllerBase
     }
 
 
-    // DELETE: api/ProjectEmployee/projectId/userId
-    [HttpDelete("{projectId}/{userId}")]
+    [HttpDelete("{projectId}/{userId}")] //delete employee from project
     public async Task<IActionResult> RemoveEmployee(
         int projectId,
         string userId)

@@ -7,4 +7,7 @@ public class User : IdentityUser
 
     public ICollection<Project_Employee> ProjectEmployees { get; set; }
         = new List<Project_Employee>();
+    public ICollection<Employee_Task> Tasks { get; set; }
+        = new List<Employee_Task>();
 }
+

@@ -27,8 +27,7 @@ public class AuthController : ControllerBase
         _tokenService = tokenService;
     }
 
-
-    [HttpPost("register")]
+    [HttpPost("register")] //register new user
     public async Task<IActionResult> Register(UserRegisterDTO dto)
     {
         var user = new User
@@ -50,16 +49,16 @@ public class AuthController : ControllerBase
         });
     }
 
-    [HttpPost("login")]
+    [HttpPost("login")] //login.
     public async Task<IActionResult> Login(LoginDTO dto)
     {
-        // Find the user
+        // Find user
         var user = await _userManager.FindByNameAsync(dto.Username);
 
         if (user == null)
             return Unauthorized("Invalid username or password.");
 
-        // Check the password
+        // Check password
         var result = await _signInManager.CheckPasswordSignInAsync(
             user,
             dto.Password,
@@ -67,7 +66,6 @@ public class AuthController : ControllerBase
 
         if (!result.Succeeded)
             return Unauthorized("Invalid username or password.");
-
 
         var token = _tokenService.CreateToken(user);
 

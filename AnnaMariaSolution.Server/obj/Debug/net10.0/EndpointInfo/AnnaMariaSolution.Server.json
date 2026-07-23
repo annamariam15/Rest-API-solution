@@ -1,5 +1,5 @@
 {
-  "openapi": "3.0.4",
+  "openapi": "3.0.1",
   "info": {
     "title": "My API",
     "description": "Sample Swagger setup in ASP.NET Core",
@@ -590,30 +590,15 @@
     "securitySchemes": {
       "Bearer": {
         "type": "http",
-        "description": "Enter: Bearer {your JWT token}",
+        "description": "Enter your JWT token",
         "scheme": "bearer",
         "bearerFormat": "JWT"
       }
     }
   },
   "security": [
-    { }
-  ],
-  "tags": [
     {
-      "name": "AnnaMariaSolution.Server"
-    },
-    {
-      "name": "Auth"
-    },
-    {
-      "name": "EmployeeTask"
-    },
-    {
-      "name": "Project"
-    },
-    {
-      "name": "ProjectEmployee"
+      "Bearer": [ ]
     }
   ]
 }
