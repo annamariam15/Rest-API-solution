@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|c:\\users\\annam\\source\\repos\\annamariasolution\\annamariasolution.server\\controllers\\userauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAEF5F70-ABD0-4ABD-44BC-7E111F73994E}|AnnaMariaSolution.Server\\AnnaMariaSolution.Server.csproj|solutionrelative:annamariasolution.server\\controllers\\userauthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Program.cs",
-              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Program.cs",
-              "RelativeToolTip": "AnnaMariaSolution.Server\\Program.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAwwG4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T14:40:02.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TokenServices.cs",
-              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Services\\TokenServices.cs",
-              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Services\\TokenServices.cs",
-              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Services\\TokenServices.cs",
-              "RelativeToolTip": "AnnaMariaSolution.Server\\Services\\TokenServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "Title": "UserAuthController.cs",
+              "DocumentMoniker": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Controllers\\UserAuthController.cs",
+              "RelativeDocumentMoniker": "AnnaMariaSolution.Server\\Controllers\\UserAuthController.cs",
+              "ToolTip": "C:\\Users\\annam\\source\\repos\\AnnaMariaSolution\\AnnaMariaSolution.Server\\Controllers\\UserAuthController.cs",
+              "RelativeToolTip": "AnnaMariaSolution.Server\\Controllers\\UserAuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T14:25:54.312Z",
+              "WhenOpened": "2026-07-24T12:57:23.798Z",
               "EditorCaption": ""
             }
           ]

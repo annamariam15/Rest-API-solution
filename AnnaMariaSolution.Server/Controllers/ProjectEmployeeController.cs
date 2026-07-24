@@ -1,93 +1,59 @@
-﻿using AnnaMariaSolution.Server.Data;
-using AnnaMariaSolution.Server.DTOs;
-using AnnaMariaSolution.Server.Models;
+﻿using AnnaMariaSolution.Server.DTOs;
+using AnnaMariaSolution.Server.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace AnnaMariaSolution.Server.Controllers;
 
 [ApiController]
+[Authorize(Roles = "Admin")]
 [Route("api/[controller]")]
 public class ProjectEmployeeController : ControllerBase
 {
-    private readonly ApplicationDbContext _context;
+    private readonly IProjectEmployeeService _service;
 
-    public ProjectEmployeeController(ApplicationDbContext context)
+    public ProjectEmployeeController(IProjectEmployeeService service)
     {
-        _context = context;
+        _service = service;
     }
 
-
-    [HttpGet] //get all
+    [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        return Ok(await _context.ProjectEmployees.ToListAsync());
+        return Ok(await _service.GetAllAsync());
     }
 
-
-    [HttpGet("project/{projectId}")] //get by projectid
+    [HttpGet("project/{projectId}")]
     public async Task<IActionResult> GetByProject(int projectId)
     {
-        var employees = await _context.ProjectEmployees
-            .Where(pe => pe.Project_ID == projectId)
-            .ToListAsync();
-
-        return Ok(employees);
+        return Ok(await _service.GetByProjectAsync(projectId));
     }
 
-
-    [HttpPost] //create new project employee
+    [HttpPost]
     public async Task<IActionResult> AddEmployee(AddEmployeeToProjectDto dto)
     {
-        var projectExists = await _context.Projects
-            .AnyAsync(p => p.Id == dto.ProjectId);
-
-        if (!projectExists)
-            return NotFound("Project not found");
-
-
-        var employeeExists = await _context.Users
-            .AnyAsync(u => u.Id == dto.UserId);
-
-        if (!employeeExists)
-            return NotFound("User not found");
-
-
-        var projectEmployee = new Project_Employee
+        try
         {
-            Project_ID = dto.ProjectId,
-            User_ID = dto.UserId,
-            JoinedAt = DateTime.UtcNow
-        };
+            var assignment = await _service.AddEmployeeAsync(dto);
 
+            if (assignment == null)
+                return NotFound("Project or user not found.");
 
-        _context.ProjectEmployees.Add(projectEmployee);
-
-        await _context.SaveChangesAsync();
-
-
-        return Ok(projectEmployee);
+            return Ok(assignment);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return Conflict(ex.Message);
+        }
     }
 
-
-    [HttpDelete("{projectId}/{userId}")] //delete employee from project
-    public async Task<IActionResult> RemoveEmployee(
-        int projectId,
-        string userId)
+    [HttpDelete("{projectId}/{userId}")]
+    public async Task<IActionResult> RemoveEmployee(int projectId, string userId)
     {
-        var projectEmployee = await _context.ProjectEmployees
-            .FindAsync(projectId, userId);
+        var removed = await _service.RemoveEmployeeAsync(projectId, userId);
 
-
-        if (projectEmployee == null)
-            return NotFound();
-
-
-        _context.ProjectEmployees.Remove(projectEmployee);
-
-        await _context.SaveChangesAsync();
-
-
-        return NoContent();
+        return removed
+            ? NoContent()
+            : NotFound();
     }
 }

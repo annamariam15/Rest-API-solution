@@ -6,8 +6,8 @@ namespace AnnaMariaSolution.Server.DTOs
     {
         [Required]
         public int ProjectId { get; set; }
-        public string Creator { get; set; } = string.Empty;
-        public string Assigned { get; set; } = string.Empty;
+        public string CreatorId { get; set; } = string.Empty;
+        public string AssignedId { get; set; } = string.Empty;
 
         public string Status { get; set; } = "Pending";
 

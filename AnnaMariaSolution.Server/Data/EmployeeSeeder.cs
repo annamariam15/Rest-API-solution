@@ -1,35 +1,36 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using AnnaMariaSolution.Server.Models;
 
+//FOR TESTING PURPOSES ONLY
 namespace AnnaMariaSolution.Server.Data
 {
-    public static class AdminSeeder
+    public static class EmployeeSeeder
     {
-        public static async Task SeedAdmin(
+        public static async Task SeedEmployee(
             UserManager<User> userManager)
         {
-            var adminEmail = "admin";
-            var adminPassword = "Admin123!";
+            var employeeEmail = "john";
+            var employeePassword = "John123!";
 
 
-            var existingAdmin =
-                await userManager.FindByEmailAsync(adminEmail);
+            var existingEmployee =
+                await userManager.FindByEmailAsync(employeeEmail);
 
 
-            if (existingAdmin == null)
+            if (existingEmployee == null)
             {
-                var admin = new User
+                var employee = new User
                 {
-                    UserName = adminEmail,
-                    Email = adminEmail,
+                    UserName = employeeEmail,
+                    Email = employeeEmail,
                     EmailConfirmed = true
                 };
 
 
                 var result =
                     await userManager.CreateAsync(
-                        admin,
-                        adminPassword);
+                        employee,
+                        employeePassword);
 
 
                 if (!result.Succeeded)
@@ -42,17 +43,17 @@ namespace AnnaMariaSolution.Server.Data
                 }
 
 
-                existingAdmin = admin;
+                existingEmployee = employee;
             }
 
 
             if (!await userManager.IsInRoleAsync(
-                existingAdmin,
-                "Admin"))
+                existingEmployee,
+                "Employee"))
             {
                 await userManager.AddToRoleAsync(
-                    existingAdmin,
-                    "Admin");
+                    existingEmployee,
+                    "Employee");
             }
         }
     }

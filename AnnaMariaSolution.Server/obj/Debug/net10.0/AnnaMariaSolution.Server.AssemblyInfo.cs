@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AnnaMariaSolution.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f67969f1a81ab820b0b8d0c72fc7368be078cce7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c776f6dd16462241ce0567c66c4abf1ed53993b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnnaMariaSolution.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnnaMariaSolution.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,7 +13,6 @@ public class TokenService
     private readonly IConfiguration _configuration;
     private readonly UserManager<User> _userManager;
 
-
     public TokenService(
         IConfiguration configuration,
         UserManager<User> userManager)
@@ -50,7 +49,6 @@ public class TokenService
                     ClaimTypes.Role,
                     role));
         }
-
 
         var key = new SymmetricSecurityKey(
             Encoding.UTF8.GetBytes(

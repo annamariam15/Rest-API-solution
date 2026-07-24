@@ -21,15 +21,28 @@ namespace AnnaMariaSolution.Server.Data
             builder.Entity<Project_Employee>()
                 .HasKey(pe => new {pe.Project_ID, pe.User_ID}); //composite pk
 
-            builder.Entity<Project_Employee>()
+            builder.Entity<Project_Employee>() //one project has many employees
                 .HasOne(pe => pe.Project)
-                .WithMany(p => p.ProjectEmployees) //1:M
+                .WithMany(p => p.ProjectEmployees)
                 .HasForeignKey(pe => pe.Project_ID);
 
-            builder.Entity<Project_Employee>()
+            builder.Entity<Project_Employee>() //one employee can have many projects
                 .HasOne(pe => pe.Employee)
-                .WithMany(u => u.ProjectEmployees) //1:M
+                .WithMany(u => u.ProjectEmployees) 
                 .HasForeignKey(pe => pe.User_ID);
+
+            builder.Entity<Employee_Task>() //one employee can create many tasks
+                .HasOne(t => t.Creator)
+                .WithMany(u => u.CreatedTasks) 
+                .HasForeignKey(t => t.CreatorId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            builder.Entity<Employee_Task>() //one employee can be assigned many tasks
+                .HasOne(t => t.Assigned)
+                .WithMany(u => u.AssignedTasks)
+                .HasForeignKey(t => t.AssignedId)
+                .OnDelete(DeleteBehavior.Restrict);
+
 
         }
 

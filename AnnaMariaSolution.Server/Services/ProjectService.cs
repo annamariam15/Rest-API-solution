@@ -1,73 +1,71 @@
-﻿/*using AnnaMariaSolution.Server.Data;
+﻿using AnnaMariaSolution.Server.Data;
 using AnnaMariaSolution.Server.DTOs;
-using AnnaMariaSolution.Server.Models;
-using AnnaMariaSolution.Server.Services.Interfaces;
-using AutoMapper;
-using Microsoft.EntityFrameworkCore; // needed for ToListAsync
+using Microsoft.EntityFrameworkCore;
 
-namespace AnnaMariaSolution.Server.Services
+namespace AnnaMariaSolution.Server.Services;
+
+public class ProjectService : IProjectService
 {
-    public class ProjectService : IProjectService
+    private readonly ApplicationDbContext _context;
+
+    public ProjectService(ApplicationDbContext context)
     {
-        private readonly ApplicationDbContext _context;
-        private readonly IMapper _mapper;
+        _context = context;
+    }
 
-        public ProjectService(ApplicationDbContext context, IMapper mapper)
-        {
-            _context = context;
-            _mapper = mapper;
-        }
+    public async Task<IEnumerable<Project>> GetAllAsync()
+    {
+        return await _context.Projects.ToListAsync();
+    }
 
-        public Task<Project> CreateAsync(Project project)
-        {
-            throw new NotImplementedException();
-        }
+    public async Task<Project?> GetByIdAsync(int id)
+    {
+        return await _context.Projects.FindAsync(id);
+    }
 
-        public Task<bool> DeleteAsync(int id)
+    public async Task<Project> CreateAsync(CreateProjectDto dto)
+    {
+        var project = new Project
         {
-            throw new NotImplementedException();
-        }
+            Name = dto.Name,
+            Desc = dto.Desc,
+            Deadline = dto.Deadline,
+            Created = DateTime.UtcNow
+        };
 
-        public Task<Project?> GetByIdAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+        _context.Projects.Add(project);
+        await _context.SaveChangesAsync();
 
-        public Task<Project?> UpdateAsync(int id, Project project)
-        {
-            throw new NotImplementedException();
-        }
+        return project;
+    }
 
-        Task<Project> IProjectService.CreateProjectAsync(CreateProjectRequest request)
-        {
-            throw new NotImplementedException();
-        }
+    public async Task<bool> UpdateAsync(int id, UpdateProjectDto dto)
+    {
+        var project = await _context.Projects.FindAsync(id);
 
-        public async Task CreateProjectAsync(CreateProjectRequest request)
-        {
-            try
-            {
-                var todo = _mapper.Map<Project>(request);
-                todo.Created = DateTime.UtcNow;
-                _context.Projects.Add(project);
-                await _context.SaveChangesAsync();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("An error occurred while creating the Todo item.");
-            }
-        }
+        if (project == null)
+            return false;
 
-        //fetch all projects from db
-        public async Task<IEnumerable<Project>> GetAllAsync()
-        {
-            var project = await _context.Projects.ToListAsync();
-            if (project == null)
-            {
-                throw new Exception(" No project items found");
-            }
-            return project;
-        }
+        project.Name = dto.Name;
+        project.Desc = dto.Desc;
+        project.Deadline = dto.Deadline;
+        project.IsComplete = dto.IsComplete;
+
+        await _context.SaveChangesAsync();
+
+        return true;
+    }
+
+    public async Task<bool> DeleteAsync(int id)
+    {
+        var project = await _context.Projects.FindAsync(id);
+
+        if (project == null)
+            return false;
+
+        _context.Projects.Remove(project);
+        await _context.SaveChangesAsync();
+
+        return true;
     }
 }
-*/

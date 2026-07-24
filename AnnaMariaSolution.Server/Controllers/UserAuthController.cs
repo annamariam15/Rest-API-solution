@@ -28,6 +28,7 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")] //register new user
+    //only for testing purposes
     public async Task<IActionResult> Register(UserRegisterDTO dto)
     {
         var user = new User
@@ -49,7 +50,7 @@ public class AuthController : ControllerBase
         });
     }
 
-    [HttpPost("login")] //login.
+    [HttpPost("login")] //login ¯\_(ツ)_/¯
     public async Task<IActionResult> Login(LoginDTO dto)
     {
         // Find user
@@ -73,7 +74,5 @@ public class AuthController : ControllerBase
         {
             token
         });
-
     }
-
 }

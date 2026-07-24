@@ -475,11 +475,11 @@
             "type": "integer",
             "format": "int32"
           },
-          "creator": {
+          "creatorId": {
             "type": "string",
             "nullable": true
           },
-          "assigned": {
+          "assignedId": {
             "type": "string",
             "nullable": true
           },
@@ -539,11 +539,11 @@
         ],
         "type": "object",
         "properties": {
-          "creator": {
+          "creatorId": {
             "type": "string",
             "nullable": true
           },
-          "assigned": {
+          "assignedId": {
             "type": "string",
             "nullable": true
           },

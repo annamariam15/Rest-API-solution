@@ -1,10 +1,7 @@
-﻿using AnnaMariaSolution.Server.Data;
-using AnnaMariaSolution.Server.DTOs;
-using AnnaMariaSolution.Server.Models;
+﻿using AnnaMariaSolution.Server.DTOs;
+using AnnaMariaSolution.Server.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-
 
 namespace AnnaMariaSolution.Server.Controllers;
 
@@ -13,101 +10,63 @@ namespace AnnaMariaSolution.Server.Controllers;
 [Route("api/[controller]")]
 public class EmployeeTaskController : ControllerBase
 {
-    private readonly ApplicationDbContext _context;
+    private readonly IEmployeeTaskService _taskService;
 
-    public EmployeeTaskController(ApplicationDbContext context)
+    public EmployeeTaskController(IEmployeeTaskService taskService)
     {
-        _context = context;
+        _taskService = taskService;
     }
 
-    [HttpGet] //get all
+    [HttpGet] //retrieves all tasks
+    //all for admin, only own for employees
     public async Task<IActionResult> GetAll()
     {
-        return Ok(await _context.Tasks.ToListAsync());
+        return Ok(await _taskService.GetAllAsync());
     }
 
-
-    [HttpGet("{id}")] //get by id
+    [HttpGet("{id}")]//retrieves task by id
+    //all for admin, only own for employees
     public async Task<IActionResult> Get(int id)
     {
-        var task = await _context.Tasks.FindAsync(id);
+        var task = await _taskService.GetByIdAsync(id);
 
-        if (task == null)
-            return NotFound();
-
-        return Ok(task);
+        return task == null
+            ? NotFound()
+            : Ok(task);
     }
 
-
     [Authorize(Roles = "Employee")]
-    [HttpPost] //create new task
+    [HttpPost]//create task
+    //only for own tasks, employee-only for testing purposes
     public async Task<IActionResult> Create(CreateTaskDto dto)
     {
-        var task = new Employee_Task
-        {
-            Project = dto.ProjectId,
-            Creator = dto.Creator,
-            Assigned = dto.Assigned,
-            Status = dto.Status,
-            Name = dto.Name,
-            Desc = dto.Desc,
-            Created = DateTime.UtcNow,
-            LastUpdate = DateTime.UtcNow
-        };
+        var task = await _taskService.CreateAsync(dto);
 
-
-        _context.Tasks.Add(task);
-
-        await _context.SaveChangesAsync();
-
-
-        return CreatedAtAction(
-            nameof(Get),
-            new { id = task.Id },
-            task
-        );
+        return CreatedAtAction(nameof(Get), new { id = task.Id }, task);
     }
 
-
     [Authorize(Roles = "Employee")]
-    [HttpPut("{id}")] //edit existing task
+    [HttpPut("{id}")]//edit task by id
+    //only for own tasks, employee-only for testing purposes
     public async Task<IActionResult> Update(int id, UpdateTaskDto dto)
     {
-        var task = await _context.Tasks.FindAsync(id);
+        var updated = await _taskService.UpdateAsync(id, dto);
 
-        if (task == null)
-            return NotFound();
-
-
-        task.Creator = dto.Creator;
-        task.Assigned = dto.Assigned;
-        task.Status = dto.Status;
-        task.Name = dto.Name;
-        task.Desc = dto.Desc;
-        task.LastUpdate = DateTime.UtcNow;
-
-
-        await _context.SaveChangesAsync();
-
-        return NoContent();
+        return updated
+            ? NoContent()
+            : NotFound();
     }
-
 
     [Authorize(Roles = "Employee")]
-    [HttpDelete("{id}")] //delete task
+    [HttpDelete("{id}")]//delete task by id
+    //only for own tasks, employee-only for testing purposes
     public async Task<IActionResult> Delete(int id)
     {
-        var task = await _context.Tasks.FindAsync(id);
+        var deleted = await _taskService.DeleteAsync(id);
 
-        if (task == null)
-            return NotFound();
-
-
-        _context.Tasks.Remove(task);
-
-        await _context.SaveChangesAsync();
-
-
-        return NoContent();
+        return deleted
+            ? NoContent()
+            : NotFound();
     }
 }
+
